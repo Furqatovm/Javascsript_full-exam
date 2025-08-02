@@ -25,6 +25,18 @@
     transition: all 0.3s linear;
     font-family: "Inter", sans-serif;
 }
+.opa{
+    background: linear-gradient(
+  to bottom,
+  rgba(32, 81, 137, 0) 0%,
+  rgba(32, 81, 137, 0.6) 90%,
+  rgba(16, 49, 92, 0.95) 100%
+);
+
+    opacity: 20%;
+    z-index: 9;
+    inset: 0;
+}
 </style>
 </head>
 <body>
@@ -158,19 +170,54 @@
 
         </div>
     </section>
-    <section class="con mx-auto p-[1rem]">
-        <div>
-            <h2 class="text-[var(--HeaderColor)] text-[1.75rem] leading-[var(--leading)] font-[700] text-center leading-[100%]">Kelajagingizni <span class="text-[var(--Blue)]">Khan Academy bilan</span>quring</h2>
-            <p class="text-[var(--matnColor)] leading-[24px] text-center mt-[1rem]">Khan Academy akademiyasida juda qisqa 
-                muddatda istalgan dasturlash sohasida 
-                Junior darajasiga chiqa olasiz</p>
-                <div class="flex items-center justify-center mt-[1rem]">
-                    <button class="bg-[var(--Blue)] flex gap-[10px] items-center py-[1.05rem] px-[2.2rem] justify-center text-[White] rounded-[4px] hover:bg-[transparent] hover:border hover:border-[var(--HeaderColor)] cursor-[pointer] hover:text-[var(--HeaderColor)]">Ko'proq ko'rish
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentcolor"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
-                    </button>
+    <section class="bg-[white]">
+        <section class="con mx-auto p-[1rem]">
+            <div>
+                <h2 class="text-[var(--HeaderColor)] text-[1.75rem] leading-[var(--leading)] font-[700] text-center leading-[100%]">Kelajagingizni <span class="text-[var(--Blue)]">Khan Academy bilan</span>quring</h2>
+                <p class="text-[var(--matnColor)] leading-[24px] text-center mt-[1rem]">Khan Academy akademiyasida juda qisqa 
+                    muddatda istalgan dasturlash sohasida 
+                    Junior darajasiga chiqa olasiz</p>
+                    <div class="flex items-center justify-center mt-[1rem]">
+                        <button class="bg-[var(--Blue)] flex gap-[10px] items-center py-[1.05rem] px-[2.2rem] justify-center text-[White] rounded-[4px] hover:bg-[transparent] hover:border hover:border-[var(--HeaderColor)] cursor-[pointer] hover:text-[var(--HeaderColor)]">Ko'proq ko'rish
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentcolor"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
+                        </button>
+                    </div>
+            </div>
+            <div class="wrap-img py-[3rem]">
+                <div class="left w-[100%] flex flex-col gap-[1.3rem] mb-[1.3rem]">
+                    <div class="relative">
+                        <div class="opa w-[100%] h-[100%] absolute"></div>
+                        <img src="./images/yeap.png" class="w-full rounded-[12px]" alt="">
+                        <div class="absolute bottom-[5%] z-10 flex justify-between items-center w-full px-[1rem]">
+                            <h4 class="font-[600] text-[1.5rem] text-[#fff]">Project Name</h4>
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.1074 5.61548C21.7623 5.61548 23.1081 6.18807 24.0371 7.11548C24.966 8.04276 25.5391 9.38526 25.5391 11.0354C25.539 12.8265 24.8407 14.3265 23.7188 15.7249C22.8628 16.7917 21.7889 17.766 20.6279 18.7415L19.4424 19.7209C17.957 20.9375 16.3306 22.2672 15.0684 23.759C15.0568 23.7727 15.0415 23.7786 15.0293 23.7786H14.9688C14.9622 23.7785 14.9551 23.7768 14.9482 23.7737L14.9287 23.759C13.6683 22.267 12.0404 20.9373 10.5576 19.7209L9.37207 18.7415C8.21096 17.7657 7.13693 16.7917 6.28125 15.7249C5.15963 14.3264 4.462 12.8262 4.46191 11.0354C4.46191 9.38524 5.03488 8.04275 5.96387 7.11548C6.89298 6.18811 8.23906 5.61548 9.89453 5.61548C11.6503 5.6157 13.2703 6.90137 14.2754 7.95337L14.998 8.71021L15.7217 7.95337C16.726 6.90221 18.3501 5.61562 20.1074 5.61548Z" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="opa w-[100%] h-[100%] absolute"></div>
+                        <img src="./images/second.jpg" class="w-full rounded-[12px]" alt="">
+                        <div class="absolute bottom-[5%] z-10 flex justify-between items-center w-full px-[1rem]">
+                            <h4 class="font-[600] text-[1.5rem] text-[#fff]">Project Name</h4>
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.1074 5.61548C21.7623 5.61548 23.1081 6.18807 24.0371 7.11548C24.966 8.04276 25.5391 9.38526 25.5391 11.0354C25.539 12.8265 24.8407 14.3265 23.7188 15.7249C22.8628 16.7917 21.7889 17.766 20.6279 18.7415L19.4424 19.7209C17.957 20.9375 16.3306 22.2672 15.0684 23.759C15.0568 23.7727 15.0415 23.7786 15.0293 23.7786H14.9688C14.9622 23.7785 14.9551 23.7768 14.9482 23.7737L14.9287 23.759C13.6683 22.267 12.0404 20.9373 10.5576 19.7209L9.37207 18.7415C8.21096 17.7657 7.13693 16.7917 6.28125 15.7249C5.15963 14.3264 4.462 12.8262 4.46191 11.0354C4.46191 9.38524 5.03488 8.04275 5.96387 7.11548C6.89298 6.18811 8.23906 5.61548 9.89453 5.61548C11.6503 5.6157 13.2703 6.90137 14.2754 7.95337L14.998 8.71021L15.7217 7.95337C16.726 6.90221 18.3501 5.61562 20.1074 5.61548Z" stroke="white" stroke-width="2"/>
+                                </svg>                                
+                        </div>
+                    </div>
+
+
                 </div>
-        </div>
+                
+                <div class="right w-[100%]">
+                    <img src="./images/big.png" class="w-full rounded-[12px]" alt="">
+                </div>
+            </div>
+    
+        </section>
 
     </section>
+    
 </body>
 </html>
