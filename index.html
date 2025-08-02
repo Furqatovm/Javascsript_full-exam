@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+    :root{
+    --HeaderColor:#323A56;
+    --Blue:#1D72D2;
+    --Herobg:#F8FAFC;
+    --matnColor:#8A90A5;
+    --v800: 800;
+    --leading:100%;
+    --White:#FFFFFF;
+    --l24: 24px;
+    --Green:#70C63B;
+    --LightGreen:#F4FFF4;
+}
+*,html{
+    transition: all 0.3s linear;
+    font-family: "Inter", sans-serif;
+}
+</style>
+</head>
+<body>
+    <header class="flex justify-between items-center con mx-auto py-[0.9rem] px-[1.2rem] shadow-[2px_3px_10px_lightgray]">
+        <div class="left text-[#8A90A5]">
+            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="currentcolor"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </div>
+        <div class="center">
+            <img src="./assets/svg/logo.png" class="w-[101px]" alt="">
+        </div>
+        <div class="flex relative">
+            <img src="./assets/svg/avatar.png" alt="">
+            <div class="p-[5px] bg-[#70C63B] h-[5px] rounded-[50%] absolute z-10 right-[5%] bottom-[10%]"></div>
+        </div>
+    </header>
+
+    <section class="bg-[#f8fafc] con mx-auto p-[1rem] flex flex-col gap-[1rem] py-[4rem]">
+        <h1 class="text-[1.875rem] font-[700] text-center leading-[var(--leading)]"><span class="text-[var(--Blue)]">Dasturlashni </span>biz bilan qulay muhitda o‘rganing</h1>
+        <p class="text-[var(--matnColor)] text-[1rem] leading-[var(--l24)] text-center">Khan Academy - bu siz izlagan akademiya bo’lib, unda siz juda qisqa muddatda istalgan dasturlash sohasida Junior darajasiga chiqa olasiz! </p>
+        <div class="flex flex-col gap-[10px] mt-[1.5rem]">
+            <button class="bg-[var(--Blue)] flex gap-[10px] items-center py-[1.05rem] w-full justify-center text-[White] rounded-[4px] hover:bg-[transparent] hover:border hover:border-[var(--HeaderColor)] cursor-[pointer] hover:text-[var(--HeaderColor)]">Boshlash 
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentcolor"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
+            </button>
+            <button class="bg-[#EFF2F7] text-[#323A56] font-[600] font-[1.125rem] flex gap-[10px] items-center py-[1.05rem] w-full justify-center rounded-[4px]">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 1C6.4225 1 1.5 5.9225 1.5 12C1.5 16.8675 4.64875 20.9788 9.02125 22.4362C9.57125 22.5325 9.7775 22.2025 9.7775 21.9137C9.7775 21.6525 9.76375 20.7862 9.76375 19.865C7 20.3737 6.285 19.1912 6.065 18.5725C5.94125 18.2562 5.405 17.28 4.9375 17.0187C4.5525 16.8125 4.0025 16.3038 4.92375 16.29C5.79 16.2762 6.40875 17.0875 6.615 17.4175C7.605 19.0812 9.18625 18.6137 9.81875 18.325C9.915 17.61 10.2038 17.1287 10.52 16.8537C8.0725 16.5787 5.515 15.63 5.515 11.4225C5.515 10.2262 5.94125 9.23625 6.6425 8.46625C6.5325 8.19125 6.1475 7.06375 6.7525 5.55125C6.7525 5.55125 7.67375 5.2625 9.7775 6.67875C10.6575 6.43125 11.5925 6.3075 12.5275 6.3075C13.4625 6.3075 14.3975 6.43125 15.2775 6.67875C17.3813 5.24875 18.3025 5.55125 18.3025 5.55125C18.9075 7.06375 18.5225 8.19125 18.4125 8.46625C19.1138 9.23625 19.54 10.2125 19.54 11.4225C19.54 15.6437 16.9688 16.5787 14.5212 16.8537C14.92 17.1975 15.2638 17.8575 15.2638 18.8887C15.2638 20.36 15.25 21.5425 15.25 21.9137C15.25 22.2025 15.4563 22.5462 16.0063 22.4362C18.1899 21.699 20.0874 20.2955 21.4317 18.4234C22.776 16.5513 23.4993 14.3048 23.5 12C23.5 5.9225 18.5775 1 12.5 1Z" fill="#323A56"/>
+                    </svg>    
+                    GitHub           
+            </button>
+        </div>
+        <div class="bg-[var(--LightGreen)] flex gap-[10px] items-center justify-center py-[14px] px-[1.7rem] max-w-[260px] mx-auto shadow-[2px_3px_10px_#0000001F] rounded-[8px] mt-[1.5rem]">
+            <img src="./assets/svg/yashil.png" class="w-[40px]" alt="">
+            <div class="flex flex-col gap-[3px]">
+                <span class="text-[10px] font-[600] text-[#323A56]">GitNation React Award</span>
+                <p class="text-[14px] text-[var(--Green)] leading-[var(--leading)]">Most Impactful Project to the Community</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
