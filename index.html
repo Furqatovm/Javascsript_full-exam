@@ -6,6 +6,7 @@
     <title>Exam</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -208,15 +209,15 @@
             <button class="px-[20px] py-[12px] bg-[#F8FAFC] text-[dark grey] text-[18px] font-[500] rounded-[30px]">Asosiy menu</button>
         </div>
     </header>
-
-    <section class="bg-[#f8fafc] con mx-auto p-[1rem] flex flex-col gap-[1rem] py-[4rem] sm:p-[2rem]">
-        <h1 class="text-[1.875rem] font-[700] text-center leading-[var(--leading)] sm:text-[48px]"><span class="text-[var(--Blue)]">Dasturlashni </span>biz bilan qulay muhitda o‘rganing</h1>
-        <p class="text-[var(--matnColor)] text-[1rem] leading-[var(--l24)] text-center">Khan Academy - bu siz izlagan akademiya bo’lib, unda siz juda qisqa muddatda istalgan dasturlash sohasida Junior darajasiga chiqa olasiz! </p>
-        <div class="flex flex-col gap-[10px] mt-[1.5rem] sm:flex-row">
-            <button class="bg-[var(--Blue)] flex gap-[10px] items-center py-[1.05rem] w-full justify-center text-[White] rounded-[4px] hover:bg-[transparent] hover:border hover:border-[var(--HeaderColor)] cursor-[pointer] hover:text-[var(--HeaderColor)]">Boshlash 
+<section class="bg-[#f8fafc]">
+    <section class="md:max-w-[860px] md:py-[7rem] con mx-auto p-[1rem] flex flex-col gap-[1rem] py-[4rem] sm:p-[2rem]">
+        <h1 class="text-[1.875rem] font-[700] text-center leading-[var(--leading)] sm:text-[48px] md:text-[3.875rem]"><span class="text-[var(--Blue)]">Dasturlashni </span>biz bilan qulay muhitda o‘rganing</h1>
+        <p class="md:text-[20px] md:leading-[29px] text-[var(--matnColor)] text-[1rem] leading-[var(--l24)] text-center">Khan Academy - bu siz izlagan akademiya bo’lib, unda siz juda qisqa muddatda istalgan dasturlash sohasida Junior darajasiga chiqa olasiz! </p>
+        <div class="flex flex-col gap-[10px] mt-[1.5rem] sm:flex-row md:max-w-[386px] md:w-full md:mx-auto">
+            <button class="bg-[var(--Blue)] flex gap-[10px] items-center py-[1.05rem] w-full justify-center text-[White] rounded-[4px] hover:bg-[transparent] hover:border hover:border-[var(--HeaderColor)] cursor-[pointer] hover:text-[var(--HeaderColor)] md:w-[48%]">Boshlash 
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentcolor"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
             </button>
-            <button class="bg-[#EFF2F7] text-[#323A56] font-[600] font-[1.125rem] flex gap-[10px] items-center py-[1.05rem] w-full justify-center rounded-[4px]">
+            <button class=" md:w-[48%] bg-[#EFF2F7] text-[#323A56] font-[600] font-[1.125rem] flex gap-[10px] items-center py-[1.05rem] w-full justify-center rounded-[4px">
                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 1C6.4225 1 1.5 5.9225 1.5 12C1.5 16.8675 4.64875 20.9788 9.02125 22.4362C9.57125 22.5325 9.7775 22.2025 9.7775 21.9137C9.7775 21.6525 9.76375 20.7862 9.76375 19.865C7 20.3737 6.285 19.1912 6.065 18.5725C5.94125 18.2562 5.405 17.28 4.9375 17.0187C4.5525 16.8125 4.0025 16.3038 4.92375 16.29C5.79 16.2762 6.40875 17.0875 6.615 17.4175C7.605 19.0812 9.18625 18.6137 9.81875 18.325C9.915 17.61 10.2038 17.1287 10.52 16.8537C8.0725 16.5787 5.515 15.63 5.515 11.4225C5.515 10.2262 5.94125 9.23625 6.6425 8.46625C6.5325 8.19125 6.1475 7.06375 6.7525 5.55125C6.7525 5.55125 7.67375 5.2625 9.7775 6.67875C10.6575 6.43125 11.5925 6.3075 12.5275 6.3075C13.4625 6.3075 14.3975 6.43125 15.2775 6.67875C17.3813 5.24875 18.3025 5.55125 18.3025 5.55125C18.9075 7.06375 18.5225 8.19125 18.4125 8.46625C19.1138 9.23625 19.54 10.2125 19.54 11.4225C19.54 15.6437 16.9688 16.5787 14.5212 16.8537C14.92 17.1975 15.2638 17.8575 15.2638 18.8887C15.2638 20.36 15.25 21.5425 15.25 21.9137C15.25 22.2025 15.4563 22.5462 16.0063 22.4362C18.1899 21.699 20.0874 20.2955 21.4317 18.4234C22.776 16.5513 23.4993 14.3048 23.5 12C23.5 5.9225 18.5775 1 12.5 1Z" fill="#323A56"/>
                     </svg>    
@@ -231,20 +232,22 @@
             </div>
         </div>
     </section>
+</section>
 
-    <section class="con mx-auto p-[1rem] my-[4rem] sm:p-[2rem]">
-        <div>
-            <h2 class="text-[var(--HeaderColor)] text-[1.75rem] leading-[var(--leading)] font-[700] text-center sm:text-[2.125rem]">Kam vaqtda <span class="text-[var(--Blue)]">ko‘proq o‘rganish</span></h2>
-            <p class="text-[var(--matnColor)] leading-[24px] text-center mt-[1rem]">Khan Academy akademiyasida juda qisqa 
+
+    <section class="con mx-auto p-[1rem] my-[4rem] sm:p-[2rem] md:mx-auto">
+        <div class="md:max-w-[775px] md:mx-auto">
+            <h2 class="md:text-[3.375rem] text-[var(--HeaderColor)] text-[1.75rem] leading-[var(--leading)] font-[700] text-center sm:text-[2.125rem]">Kam vaqtda <span class="text-[var(--Blue)]">ko‘proq o‘rganish</span></h2>
+            <p class="md:text-[20px] md:leading-[29px] text-[var(--matnColor)] leading-[24px] text-center mt-[1rem]">Khan Academy akademiyasida juda qisqa 
                 muddatda istalgan dasturlash sohasida 
                 Junior darajasiga chiqa olasiz</p>
         </div>
         <div class="wra border-[1px] border-[#8A90A5] rounded-[8px] sm:flex mt-[3rem]">
             <div class="left sm:w-[60%]">
-                <img src="./images/watch video.png" class="w-[100%]" alt="">
+                <img src="./images/watch video (1).png" class="w-[100%]" alt="">
             </div>
             <div class="righ p-[1rem] sm:w-[40%] sm:flex sm:items-center sm:justify-center">
-                <div class="flex flex-col gap-[1rem] p-[1.5rem] border border-[#EFF2F7] shadow-[2px_3px_10px_lightgray] rounded-[6px]">
+                <div class="flex flex-col gap-[1rem] p-[1.5rem] border border-[#EFF2F7] shadow-[2px_3px_10px_lightgray] rounded-[6px] md:w-[70%]">
                     <img src="./images/table.jpg" class="rounded-[6px]" alt="">
                     <div class="buttons">
                         <button class="text-[var(--Blue)] text-[12px] font-[500] py-[4px] px-[6px] rounded-[4px] bg-[#EFF2F7]">PLUS</button>
@@ -262,14 +265,16 @@
         </div>
     </section>
 
-    <section class="jihatlar con mx-auto p-[1rem] bg-[#F8FAFC] py-[3.5rem] sm:p-[2rem] sm:py-[4rem]">
-        <div>
-            <h2 class="text-[var(--HeaderColor)] text-[1.75rem] leading-[var(--leading)] font-[700] text-center sm:text-[2.125rem]">Bizning ustun <span class="text-[var(--Blue)]">jihatlarimiz</span></h2>
-            <p class="text-[var(--matnColor)] leading-[24px] text-center mt-[1rem]">Quyida bizning ustun jihatlarimiz bilan tanishing</p>
+    <section class=" bg-[#F8FAFC]">
+        
+    <section class="jihatlar con mx-auto p-[1rem] py-[3.5rem] sm:p-[2rem] sm:py-[4rem]">
+        <div class="md:max-w-[775px] md:mx-auto">
+            <h2 class="md:text-[3.375rem] text-[var(--HeaderColor)] text-[1.75rem] leading-[var(--leading)] font-[700] text-center sm:text-[2.125rem]">Bizning ustun <span class="text-[var(--Blue)]">jihatlarimiz</span></h2>
+            <p class="md:text-[20px] md:leading-[29px] text-[var(--matnColor)] leading-[24px] text-center mt-[1rem]">Quyida bizning ustun jihatlarimiz bilan tanishing</p>
         </div>
 
         <div class="wra flex flex-col gap-[1.25rem] mt-[2rem] sm:flex-row sm:flex-wrap sm:mt-[4rem]">
-            <div class="chi p-[1.875rem] bg-[#FFFFFF] border border-[#eff2f7] shadow-[0px_10px_16px_0px_rgba(32, 81, 137, 0.06)] rounded-[10px] flex flex-col gap-[1rem] w-[100%] sm:w-[48%]">
+            <div class="chi md:w-[32%] p-[1.875rem] bg-[#FFFFFF] border border-[#eff2f7] shadow-[0px_10px_16px_0px_rgba(32, 81, 137, 0.06)] rounded-[10px] flex flex-col gap-[1rem] w-[100%] sm:w-[48%]">
                 <div class="p-[13px] bg-[#EFF2F7] rounded-[50%] w-[50px] h-[50px] flex items-center">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.9997 11.807C10.7415 10.5483 9.88464 8.94484 9.53738 7.1993C9.19012 5.45375 9.36807 3.64444 10.0487 2C8.10801 2.38205 6.32535 3.33431 4.92875 4.735C1.02375 8.64 1.02375 14.972 4.92875 18.877C8.83475 22.783 15.1657 22.782 19.0717 18.877C20.4721 17.4805 21.4243 15.6983 21.8067 13.758C20.1623 14.4385 18.353 14.6164 16.6075 14.2692C14.862 13.9219 13.2585 13.0651 11.9997 11.807Z" fill="#1D72D2"/>
@@ -278,7 +283,7 @@
                 <h4 class="text-[#323A56] text-[1.125rem] font-[600]">Kuchli Mentorlar</h4>
                 <p class="text-[var(--matnColor)] leading-[24px] text-[1rem]">Webbrain UI strictly follows WAIAR standarts for all components strictly follows.</p>
             </div>
-            <div class="chi sm:w-[48%] p-[1.875rem] bg-[#FFFFFF] border border-[#eff2f7] shadow-[0px_10px_16px_0px_rgba(32, 81, 137, 0.06)] rounded-[10px] flex flex-col gap-[1rem] w-[100%]">
+            <div class="chi md:w-[32%] sm:w-[48%] p-[1.875rem] bg-[#FFFFFF] border border-[#eff2f7] shadow-[0px_10px_16px_0px_rgba(32, 81, 137, 0.06)] rounded-[10px] flex flex-col gap-[1rem] w-[100%]">
                 <div class="p-[13px] bg-[#EFF2F7] rounded-[50%] w-[50px] h-[50px] flex items-center">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.9997 11.807C10.7415 10.5483 9.88464 8.94484 9.53738 7.1993C9.19012 5.45375 9.36807 3.64444 10.0487 2C8.10801 2.38205 6.32535 3.33431 4.92875 4.735C1.02375 8.64 1.02375 14.972 4.92875 18.877C8.83475 22.783 15.1657 22.782 19.0717 18.877C20.4721 17.4805 21.4243 15.6983 21.8067 13.758C20.1623 14.4385 18.353 14.6164 16.6075 14.2692C14.862 13.9219 13.2585 13.0651 11.9997 11.807Z" fill="#1D72D2"/>
@@ -287,7 +292,7 @@
                 <h4 class="text-[#323A56] text-[1.125rem] font-[600]">Kuchli Mentorlar</h4>
                 <p class="text-[var(--matnColor)] leading-[24px] text-[1rem]">Webbrain UI strictly follows WAIAR standarts for all components strictly follows.</p>
             </div>
-            <div class="chi sm:w-[48%] p-[1.875rem] bg-[#FFFFFF] border border-[#eff2f7] shadow-[0px_10px_16px_0px_rgba(32, 81, 137, 0.06)] rounded-[10px] flex flex-col gap-[1rem] w-[100%]">
+            <div class="chi md:w-[32%] sm:w-[48%] p-[1.875rem] bg-[#FFFFFF] border border-[#eff2f7] shadow-[0px_10px_16px_0px_rgba(32, 81, 137, 0.06)] rounded-[10px] flex flex-col gap-[1rem] w-[100%]">
                 <div class="p-[13px] bg-[#EFF2F7] rounded-[50%] w-[50px] h-[50px] flex items-center">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.9997 11.807C10.7415 10.5483 9.88464 8.94484 9.53738 7.1993C9.19012 5.45375 9.36807 3.64444 10.0487 2C8.10801 2.38205 6.32535 3.33431 4.92875 4.735C1.02375 8.64 1.02375 14.972 4.92875 18.877C8.83475 22.783 15.1657 22.782 19.0717 18.877C20.4721 17.4805 21.4243 15.6983 21.8067 13.758C20.1623 14.4385 18.353 14.6164 16.6075 14.2692C14.862 13.9219 13.2585 13.0651 11.9997 11.807Z" fill="#1D72D2"/>
@@ -296,7 +301,7 @@
                 <h4 class="text-[#323A56] text-[1.125rem] font-[600]">Kuchli Mentorlar</h4>
                 <p class="text-[var(--matnColor)] leading-[24px] text-[1rem]">Webbrain UI strictly follows WAIAR standarts for all components strictly follows.</p>
             </div>
-            <div class="chi sm:w-[48%] p-[1.875rem] bg-[#FFFFFF] border border-[#eff2f7] shadow-[0px_10px_16px_0px_rgba(32, 81, 137, 0.06)] rounded-[10px] flex flex-col gap-[1rem] w-[100%]">
+            <div class="chi md:w-[32%] sm:w-[48%] p-[1.875rem] bg-[#FFFFFF] border border-[#eff2f7] shadow-[0px_10px_16px_0px_rgba(32, 81, 137, 0.06)] rounded-[10px] flex flex-col gap-[1rem] w-[100%]">
                 <div class="p-[13px] bg-[#EFF2F7] rounded-[50%] w-[50px] h-[50px] flex items-center">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.9997 11.807C10.7415 10.5483 9.88464 8.94484 9.53738 7.1993C9.19012 5.45375 9.36807 3.64444 10.0487 2C8.10801 2.38205 6.32535 3.33431 4.92875 4.735C1.02375 8.64 1.02375 14.972 4.92875 18.877C8.83475 22.783 15.1657 22.782 19.0717 18.877C20.4721 17.4805 21.4243 15.6983 21.8067 13.758C20.1623 14.4385 18.353 14.6164 16.6075 14.2692C14.862 13.9219 13.2585 13.0651 11.9997 11.807Z" fill="#1D72D2"/>
@@ -305,7 +310,7 @@
                 <h4 class="text-[#323A56] text-[1.125rem] font-[600]">Kuchli Mentorlar</h4>
                 <p class="text-[var(--matnColor)] leading-[24px] text-[1rem]">Webbrain UI strictly follows WAIAR standarts for all components strictly follows.</p>
             </div>
-            <div class="chi sm:w-[48%] p-[1.875rem] bg-[#FFFFFF] border border-[#eff2f7] shadow-[0px_10px_16px_0px_rgba(32, 81, 137, 0.06)] rounded-[10px] flex flex-col gap-[1rem] w-[100%]">
+            <div class="chi md:w-[32%] sm:w-[48%] p-[1.875rem] bg-[#FFFFFF] border border-[#eff2f7] shadow-[0px_10px_16px_0px_rgba(32, 81, 137, 0.06)] rounded-[10px] flex flex-col gap-[1rem] w-[100%]">
                 <div class="p-[13px] bg-[#EFF2F7] rounded-[50%] w-[50px] h-[50px] flex items-center">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.9997 11.807C10.7415 10.5483 9.88464 8.94484 9.53738 7.1993C9.19012 5.45375 9.36807 3.64444 10.0487 2C8.10801 2.38205 6.32535 3.33431 4.92875 4.735C1.02375 8.64 1.02375 14.972 4.92875 18.877C8.83475 22.783 15.1657 22.782 19.0717 18.877C20.4721 17.4805 21.4243 15.6983 21.8067 13.758C20.1623 14.4385 18.353 14.6164 16.6075 14.2692C14.862 13.9219 13.2585 13.0651 11.9997 11.807Z" fill="#1D72D2"/>
@@ -314,7 +319,7 @@
                 <h4 class="text-[#323A56] text-[1.125rem] font-[600]">Kuchli Mentorlar</h4>
                 <p class="text-[var(--matnColor)] leading-[24px] text-[1rem]">Webbrain UI strictly follows WAIAR standarts for all components strictly follows.</p>
             </div>
-            <div class="chi sm:w-[48%] p-[1.875rem] bg-[#FFFFFF] border border-[#eff2f7] shadow-[0px_10px_16px_0px_rgba(32, 81, 137, 0.06)] rounded-[10px] flex flex-col gap-[1rem] w-[100%]">
+            <div class="chi md:w-[32%] sm:w-[48%] p-[1.875rem] bg-[#FFFFFF] border border-[#eff2f7] shadow-[0px_10px_16px_0px_rgba(32, 81, 137, 0.06)] rounded-[10px] flex flex-col gap-[1rem] w-[100%]">
                 <div class="p-[13px] bg-[#EFF2F7] rounded-[50%] w-[50px] h-[50px] flex items-center">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.9997 11.807C10.7415 10.5483 9.88464 8.94484 9.53738 7.1993C9.19012 5.45375 9.36807 3.64444 10.0487 2C8.10801 2.38205 6.32535 3.33431 4.92875 4.735C1.02375 8.64 1.02375 14.972 4.92875 18.877C8.83475 22.783 15.1657 22.782 19.0717 18.877C20.4721 17.4805 21.4243 15.6983 21.8067 13.758C20.1623 14.4385 18.353 14.6164 16.6075 14.2692C14.862 13.9219 13.2585 13.0651 11.9997 11.807Z" fill="#1D72D2"/>
@@ -326,11 +331,13 @@
 
         </div>
     </section>
+
+    </section>
     <section class="bg-[white] sm:py-[3rem]">
         <section class="con mx-auto p-[1rem]">
-            <div class="sm:flex sm:flex-col">
-                <h2 class="text-[var(--HeaderColor)] text-[1.75rem] leading-[var(--leading)] font-[700] text-center leading-[100%]">Kelajagingizni <span class="text-[var(--Blue)]">Khan Academy bilan </span>quring</h2>
-                <p class="text-[var(--matnColor)] leading-[24px] text-center mt-[1rem]">Khan Academy akademiyasida juda qisqa 
+            <div class="sm:flex sm:flex-col md:max-w-[775px] md:mx-auto">
+                <h2 class="md:text-[3.375rem] text-[var(--HeaderColor)] text-[1.75rem] leading-[var(--leading)] font-[700] text-center leading-[100%]">Kelajagingizni <span class="text-[var(--Blue)]">Khan Academy bilan </span>quring</h2>
+                <p class="md:text-[20px] md:leading-[29px] text-[var(--matnColor)] leading-[24px] text-center mt-[1rem]">Khan Academy akademiyasida juda qisqa 
                     muddatda istalgan dasturlash sohasida 
                     Junior darajasiga chiqa olasiz</p>
                     <div class="flex items-center justify-center mt-[1rem] sm:mt-[2rem] sm:mb-[3rem]">
@@ -339,9 +346,9 @@
                         </button>
                     </div>
             </div>
-            <div class="wrap-img py-[3rem]">
-                <div class="left w-[100%] flex flex-col gap-[1.3rem] mb-[1.3rem] sm:flex-row">
-                    <div class="relative sm:w-[49%]">
+            <div class="wrap-img py-[3rem] md:flex md:justify-between">
+                <div class="md:flex-col md:gap-[2rem] left w-[100%] flex flex-col gap-[1.3rem] mb-[1.3rem] sm:flex-row md:w-[31%]">
+                    <div class="relative sm:w-[49%] md:w-[100%]">
                         <div class="opa w-[100%] h-[100%] absolute"></div>
                         <img src="./images/yeap.png" class="w-full rounded-[12px]" alt="">
                         <div class="absolute bottom-[5%] z-10 flex justify-between items-center w-full px-[1rem]">
@@ -352,7 +359,7 @@
                         </div>
                     </div>
 
-                    <div class="relative sm:w-[49%]">
+                    <div class="relative sm:w-[49%]  md:w-[100%]">
                         <div class="opa w-[100%] h-[100%] absolute"></div>
                         <img src="./images/second.jpg" class="w-full rounded-[12px]" alt="">
                         <div class="absolute bottom-[5%] z-10 flex justify-between items-center w-full px-[1rem]">
@@ -366,7 +373,7 @@
 
                 </div>
                 
-                <div class="right w-[100%]">
+                <div class="right w-[100%]  md:w-[65%]">
                     <img src="./images/big.png" class="w-full rounded-[12px]" alt="">
                 </div>
             </div>
@@ -377,13 +384,13 @@
 
     <section class="bg-[var(--Blue)] py-[2rem]">
         <div class="con mx-auto p-[1rem]">
-            <div>
-                <h2 class="text-[white] text-[1.75rem] leading-[var(--leading)] font-[700] text-center leading-[100%] sm:text-[2.125rem]">Shiddat bilan
+            <div class="md:max-w-[735px] md:mx-auto">
+                <h2 class="md:text-[3.375rem] text-[white] text-[1.75rem] leading-[var(--leading)] font-[700] text-center leading-[100%] sm:text-[2.125rem]">Shiddat bilan
                     o‘sayotgan Khan Acdemy</h2>
-                <p class="text-[white] opacity-70 leading-[24px] text-center mt-[1rem]">We’re dedicated to improving the experience and perfomance of Webbrain UI</p>
+                <p class="md:text-[20px] md:leading-[29px] text-[white] opacity-70 leading-[24px] text-center mt-[1rem]">We’re dedicated to improving the experience and perfomance of Webbrain UI</p>
             </div>
 
-            <div class="wral flex flex-col gap-[2.5rem] my-[1rem] sm:flex-row sm:flex-wrap sm:justify-between sm:gap-[0] sm:py-[4rem] sm:pb-[0]">
+            <div class="wral md:flex-row md:flex-nowrap md:items-center flex flex-col gap-[2.5rem] my-[1rem] sm:flex-row sm:flex-wrap sm:justify-between sm:gap-[0] sm:py-[4rem] sm:pb-[0]">
                 <div class="chi sm:w-[49%] flex flex-col justify-between border-l-[2px] border-[#ECC744] pl-[4rem]">
                     <span class="font-[400] text-[3.75rem] text-[white]">1.2M</span>
                     <div class="flex gap-[6px] items-center">
@@ -408,7 +415,7 @@
                     </div>
                 </div>
 
-                <div class="chi sm:mt-[2rem] sm:w-[49%]  flex flex-col justify-between border-l-[2px] border-[#ECC744] pl-[4rem]">
+                <div class="chi md:mt-[0] sm:mt-[2rem] sm:w-[49%]  flex flex-col justify-between border-l-[2px] border-[#ECC744] pl-[4rem]">
                     <span class="font-[400] text-[3.75rem] text-[white]">1.2M</span>
                     <div class="flex gap-[6px] items-center">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -420,7 +427,7 @@
                     </div>
                 </div>
 
-                <div class="chi sm:mt-[2rem] sm:w-[49%]  flex flex-col justify-between border-l-[2px] border-[#ECC744] pl-[4rem]">
+                <div class="chi md:mt-[0] sm:mt-[2rem] sm:w-[49%]  flex flex-col justify-between border-l-[2px] border-[#ECC744] pl-[4rem]">
                     <span class="font-[400] text-[3.75rem] text-[white]">1.2M</span>
                     <div class="flex gap-[6px] items-center">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -455,7 +462,7 @@
                     <div class="img relative">
                         <div class="w-full h-full  absolute hover:bg-gradient-to-b from-transparent to-[var(--Blue)]"></div>
                     <img src="./images/friend/6d74220cbe1464dbbc04ca9002dfc58569f6226c.jpg" class="w-full rounded-t-[12px]" alt="">
-                    <div class="flex gap-[8px] items-center justify-center z-20 absolute bottom-[5%] left-[20%]">
+                    <div class="flex gap-[8px] items-center justify-center z-10 absolute bottom-[5%] left-[20%]">
                         <div class="p-[13px] border border-[#FFFFFF] rounded-[50%] bg-[transparent] w-[46px] h-[46px] flex items-center justify-center">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9.99532 1.66675C8.34715 1.66675 6.73598 2.15549 5.36557 3.07117C3.99516 3.98685 2.92706 5.28834 2.29633 6.81105C1.6656 8.33377 1.50057 10.0093 1.82211 11.6258C2.14366 13.2423 2.93733 14.7272 4.10277 15.8926C5.26821 17.0581 6.75306 17.8517 8.36957 18.1733C9.98608 18.4948 11.6616 18.3298 13.1844 17.6991C14.7071 17.0683 16.0086 16.0002 16.9242 14.6298C17.8399 13.2594 18.3287 11.6483 18.3287 10.0001C18.3287 8.90571 18.1133 7.82203 17.6945 6.81095C17.2757 5.79986 16.6619 4.88116 15.8881 4.10732C15.1142 3.33348 14.1955 2.71966 13.1845 2.3009C12.1734 1.88214 11.0897 1.66666 9.99532 1.66675ZM12.6449 14.2938C12.6137 14.3716 12.5663 14.4418 12.5057 14.4997C12.4452 14.5577 12.3729 14.602 12.2939 14.6297C12.2148 14.6575 12.1307 14.668 12.0472 14.6606C11.9638 14.6531 11.8829 14.628 11.8099 14.5867L9.54769 12.8289L8.09576 14.1684C8.06207 14.1933 8.02266 14.2093 7.98116 14.215C7.93965 14.2207 7.89739 14.2158 7.85826 14.2009L8.13659 11.7105L8.1455 11.7175L8.15119 11.6684C8.15119 11.6684 12.222 7.96212 12.3879 7.80421C12.5557 7.64671 12.5004 7.61255 12.5004 7.61255C12.5099 7.42044 12.1991 7.61255 12.1991 7.61255L6.80532 11.0826L4.55908 10.3176C4.55908 10.3176 4.21408 10.1938 4.18158 9.92175C4.14742 9.65175 4.57032 9.50508 4.57032 9.50508L13.5012 5.95716C13.5012 5.95716 14.2353 5.63006 14.2353 6.17175L12.6449 14.2938Z" fill="white"/>
